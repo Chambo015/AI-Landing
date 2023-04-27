@@ -5,19 +5,17 @@
 
 @layer base {
     body {
-      /*   font-family: Montserrat, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
         @apply bg-black text-white
     }
     h2 {
-        @apply font-Dewi font-bold text-[50px];
+        @apply font-Dewi uppercase font-bold text-[50px];
 
         & > span {
             @apply bg-heading-gradient bg-clip-text text-transparent
         }
     }
     h1 {
-        @apply font-Dewi font-bold text-6xl;
+        @apply font-Dewi font-bold uppercase text-6xl;
          
         & > span {
             @apply bg-heading-gradient bg-clip-text text-transparent 
@@ -26,4 +24,9 @@
     svg {
         @apply inline
     }
+}
+
+html, body {
+    font-family: Montserrat, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }

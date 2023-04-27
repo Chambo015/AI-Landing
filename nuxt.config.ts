@@ -4,5 +4,17 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.scss',
+    },
+    app: {
+        head : {
+            title: 'AI - Integrator',
+            htmlAttrs: {
+                    lang: 'ru'
+             
+            }
+        }
+    },
+    typescript: {
+        typeCheck: true
     }
 })

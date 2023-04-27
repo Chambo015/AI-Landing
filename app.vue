@@ -5,7 +5,7 @@
         </header>
         <section>
             <div class="container mt-8">
-                <h1 class="text-center uppercase">
+                <h1 class="text-center">
                     <span>AI - Интегратор</span> <br />
                     Профессия Будущего
                 </h1>
@@ -46,5 +46,12 @@
             
         </section>
         <SectionsHeroCards />
+        <SectionsSalaries />
+        <SectionsAboutAIIntegrator />
+        <SectionsAbilityAIIntegrator />
+        <SectionsLeadTeacher />
+        <SectionsEducationProgram />
+        <SectionsCertificate />
+        <SectionsForm />
     </main>
 </template>

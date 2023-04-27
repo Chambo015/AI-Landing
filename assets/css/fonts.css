@@ -4,7 +4,7 @@
          url('~/assets/fonts/RFDewiExpanded-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
   }
 
   /* montserrat-300 - latin */
