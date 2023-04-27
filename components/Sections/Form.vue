@@ -17,7 +17,7 @@
                             class="text-[#474747] pl-4 uppercase outline-none"
                             placeholder="Ваш номер телефона" />
                     </div>
-                    <ButtonsHero class="text-white outline-none text-xl h-[80px] py-3 w-[300px] px-3 gap-2 space-x-2" />
+                    <ButtonsHero class="text-white outline-none text-xl h-[80px] !py-3 flex justify-center items-center w-[300px] px-3 gap-2 space-x-2" />
                 </form>
                 <div class="flex">
                     <div class="w-[350px] flex items-center mt-9">
