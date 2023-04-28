@@ -4,7 +4,7 @@
             <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto" />
         </header>
         <section>
-            <div class="container mt-8">
+            <div  class="container mt-8">
                 <h1 class="text-center">
                     <span>AI - Интегратор</span> <br />
                     Профессия Будущего

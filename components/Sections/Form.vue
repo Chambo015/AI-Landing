@@ -3,29 +3,41 @@
         <div class="container flex justify-center">
             <div class="text-[#AAA9A9] bg-white py-14 px-10">
                 <h2 class="text-center text-black">Записаться на курс</h2>
-                <form class="flex gap-4 justify-center mt-16">
+                <form class="flex gap-4 justify-center mt-16" @submit="submitHandle">
                     <div
                         class="form_item focus-within:before:!bg-black text-[#474747] w-[300px] px-6 h-[80px] relative flex items-center">
                         <IconsUser class="w-5 h-5" />
-                        <input type="text" class="text-[#474747] pl-4 uppercase outline-none" placeholder="ваше имя" />
+                        <input
+                            v-model="form.name"
+                            type="text"
+                            class="text-[#474747] pl-4 uppercase outline-none"
+                            placeholder="ваше имя"
+                            required
+                            minlength="3" />
                     </div>
                     <div
                         class="form_item focus-within:before:!bg-black text-[#474747] w-[300px] px-6 h-[80px] relative flex items-center">
                         <IconsPhone class="w-5 h-5" />
                         <input
-                            type="text"
+                            v-model="form.phone"
+                            required
+                            v-maska="maskBinded"
+                            data-maska="+7-(###)-###-##-##"
+                            pattern="[+]\d-\(\d{3}\)-\d{3}-\d{2}-\d{2}"
+                            type="phone"
                             class="text-[#474747] pl-4 uppercase outline-none"
                             placeholder="Ваш номер телефона" />
                     </div>
-                    <ButtonsHero class="text-white outline-none text-xl h-[80px] !py-3 flex justify-center items-center w-[300px] px-3 gap-2 space-x-2" />
+                    <ButtonsHero
+                        class="text-white outline-none text-xl h-[80px] !py-3 flex justify-center items-center w-[300px] px-3 gap-2 space-x-2" />
                 </form>
                 <div class="flex">
                     <div class="w-[350px] flex items-center mt-9">
                         <img src="~/assets/img/kuanysh.png" alt="author" class="w-14 h-14 inline-block mr-5" />
                         <span class="leading-tight">Куаныш, автор курса перезвонит, ответит на вопросы</span>
                     </div>
-                    <label class="w-[300px] ml-auto inline-flex items-start mt-4">
-                        <input type="checkbox" class="checkbox" />
+                    <label ref="checkboxEl"  class="w-[300px] ml-auto inline-flex items-start mt-4 ">
+                        <input  type="checkbox" class="checkbox focus:outline" v-model="form.privacy" />
                         <span class="text-xs leading-tight cursor-pointer select-none">
                             Нажимая на кнопку вы соглашаетесь с условиями обработки данных и политикой
                             конфиденциальности
@@ -42,6 +54,51 @@
 
 <script setup lang="ts">
 import sectionBgImg from '~/assets/img/bg-form.png';
+import { vMaska } from 'maska';
+import { getDatabase, ref as refFirebase, set, push } from 'firebase/database';
+
+
+const checkboxEl = ref<null | HTMLInputElement>(null)
+
+const maskBinded = reactive({
+    masked: '',
+    unmasked: '',
+    completed: false
+});
+const form = reactive({
+    name: '',
+    phone: '',
+    privacy: false,
+});
+
+async function writeUserData(name: string, phone: string) {
+    try {
+        const db = getDatabase();
+        const postListRef = refFirebase(db, 'feedbackAI');
+        const newPostRef = push(postListRef);
+        await set(newPostRef, {
+            username: name,
+            privacy: true,
+            phone: phone,
+            created: new Date().toLocaleString(),
+        });
+        return true
+    } catch (error) {
+        return new Error('Error Firebase')
+    }
+}
+
+const submitHandle = async (e: HTMLFormElement) => {
+    e.preventDefault();
+
+    if(!form.privacy) {
+       checkboxEl.value?.focus()
+    } else {
+        await writeUserData(form.name, form.phone);
+        form.name = '';
+        form.phone = '';
+    }
+};
 </script>
 
 <style scoped lang="scss">
