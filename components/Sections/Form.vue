@@ -1,5 +1,6 @@
 <template>
-    <section class="mt-32 pt-32 pb-9 bg-cover bg-top" :style="{backgroundImage: `url(${sectionBgImg})`}">
+    <section class="mt-32 pt-32 pb-9 bg-cover bg-top relative" :style="{backgroundImage: `url(${sectionBgImg})`}">
+        <div class="absolute inset-0" :style="{backgroundImage: `url(${noiseImg})`}"></div>
         <div class="container flex justify-center">
             <div class="text-[#AAA9A9] bg-white py-14 px-10">
                 <h2 class="text-center text-black">Записаться на курс</h2>
@@ -53,7 +54,8 @@
 </template>
 
 <script setup lang="ts">
-import sectionBgImg from '~/assets/img/bg-form.png';
+import sectionBgImg from '~/assets/img/blurry.svg';
+import noiseImg from '~/assets/img/noise.svg';
 import { vMaska } from 'maska';
 import { getDatabase, ref as refFirebase, set, push } from 'firebase/database';
 
