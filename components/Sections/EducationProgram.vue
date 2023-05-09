@@ -1,5 +1,5 @@
 <template>
-    <section class="py-32">
+    <section class="py-32" id="education">
         <div class="container">
             <h2 class="leading-tight">Программа обучения — <span class="block">6 месяцев</span></h2>
             <p class="mt-7 text-2xl">15 часов теории и 110 часов практики</p>

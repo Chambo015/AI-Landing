@@ -2,7 +2,7 @@
     <section>
         <div class="container mt-32">
             <h2>
-                На что способен  <span class="block leading-none">ai - интегратор? </span>
+                На что способен  <span class="block leading-snug">ai - интегратор? </span>
             </h2>
             <ul class="flex gap-20 mt-16 flex-wrap">
                 <li v-for="a in ability" :key="text" class="flex items-center flex-shrink-0">

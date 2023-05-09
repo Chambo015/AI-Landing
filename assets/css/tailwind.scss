@@ -5,17 +5,17 @@
 
 @layer base {
     body {
-        @apply bg-black text-white
+        @apply bg-black text-white overflow-x-hidden
     }
     h2 {
-        @apply font-Dewi uppercase font-bold text-[50px];
+        @apply font-Dewi uppercase font-bold 2xl:text-[50px] text-2xl;
 
         & > span {
             @apply bg-heading-gradient bg-clip-text text-transparent
         }
     }
     h1 {
-        @apply font-Dewi font-bold uppercase text-6xl;
+        @apply font-Dewi font-bold uppercase 2xl:text-6xl max-lg:text-5xl text-3xl;
          
         & > span {
             @apply bg-heading-gradient bg-clip-text text-transparent 

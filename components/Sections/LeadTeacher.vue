@@ -7,7 +7,7 @@
                 <li class="flex text-2xl mb-8"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI0IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNjQgNCI+PHBhdGggZmlsbD0iIzQzNDQzRSIgZD0iTTQgNCAwIDBoNjRsLTQgNEg0WiIvPjwvc3ZnPg==" alt="" class="mr-6 select-none" aria-hidden="true"><span>MSc Data Science, Nazarbayev University</span></li>
                 <li class="flex text-2xl mb-8"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI0IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNjQgNCI+PHBhdGggZmlsbD0iIzQzNDQzRSIgZD0iTTQgNCAwIDBoNjRsLTQgNEg0WiIvPjwvc3ZnPg==" alt="" class="mr-6 select-none" aria-hidden="true"><span>Python, Javascript, Java, C/C++, SQL, PHP</span></li>
             </ul>
-            <ButtonsWithBorder class="mt-20">изучить программу</ButtonsWithBorder>
+            <a href="#education"><ButtonsWithBorder class="mt-20">изучить программу</ButtonsWithBorder></a>
             <img src="~/assets/img/lead-teacher.png" alt="teacher_photo" class="absolute right-0 top-0 w-[613px] h-auto">
         </div>
         <img src="~/assets/img/waves.png" alt="waves" aria-hidden class="select-none pointer-events-none absolute left-1/2 translate-x-[200px] bottom-0 z-[-2] translate-y-[13%]">

@@ -1,13 +1,13 @@
 <template>
     <main>
-        <header class="container text-center mt-[50px]">
-            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto" />
+        <header class="container text-center mt-[50px] ">
+            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto lg:w-[128px] w-[80px]" />
         </header>
         <section>
             <div  class="container mt-8">
                 <h1 class="text-center">
-                    <span>AI - Интегратор</span> <br />
-                    Профессия Будущего
+                    <span>AI - Интегратор</span><br />
+                    <span class="whitespace-nowrap text-white">Профессия Будущего</span>
                 </h1>
                 <p class="max-w-[570px] mx-auto text-2xl mt-10 text-center">
                     С нуля до уровня Junior+ вместе с Blockchain University при поддержке Astana Hub
@@ -16,7 +16,7 @@
         </section>
         <section class="relative h-[600px]">
            <div class="h-full flex flex-col">
-              <div class="flex justify-center gap-[380px] pt-24 ">
+              <div class="flex justify-center gap-[380px] pt-24 max-lg:gap-[300px]">
                   <div class="w-[221px]">
                       <div class="max-w-[220px] flex items-center gap-3 mb-5">
                           <span class="font-Dewi text-7xl">6</span><span class="text-2xl">месяцев обучения</span>
@@ -36,7 +36,7 @@
                       </svg>
                   </div>
               </div>
-              <div class="pt-5 mt-auto"><ButtonsHero class="mx-auto block" /></div>
+              <div class="pt-5 mt-auto"><a href="#form"><ButtonsHero class="mx-auto block" /></a></div>
            </div>
             <img
                 src="~/assets/img/bg-hero.png"
@@ -54,4 +54,17 @@
         <SectionsCertificate />
         <SectionsForm />
     </main>
+    <ModalWorkShop v-if="visibleModalWorkShop" :close-modal="closeModalWorkshop" />
 </template>
+
+<script setup lang="ts">
+onMounted(() => {
+    setTimeout(() => {
+        visibleModalWorkShop.value = true;
+    }, 3000);
+});
+
+const visibleModalWorkShop = ref(false);
+const closeModalWorkshop = () => (visibleModalWorkShop.value = false)
+const openModalWorkshop = () => (visibleModalWorkShop.value = true)
+</script>
