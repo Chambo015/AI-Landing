@@ -1,5 +1,5 @@
 <template>
-      <li class="p-[1px] h-[206px]" ref="targetOne" :style="{'--x': card.x, '--y': card.y}">
+      <li class="p-[1px] 2xl:h-[206px] h-[150px]" ref="targetOne" :style="{'--x': card.x, '--y': card.y}">
         <div class="first_card p-[1px] items-center justify-center flex w-full h-full"><slot /></div>
         </li>
 </template>

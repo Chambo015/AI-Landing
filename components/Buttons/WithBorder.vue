@@ -1,12 +1,43 @@
 <template>
-    <button class=" flex items-center group hover: justify-center px-14 h-[98px] w-[576px] text-3xl leading-none uppercase font-Dewi font-bold before:absolute isolate before:bg-light-btn-gradient relative before:inset-0 before:z-[-1] before:opacity-0 before:duration-500 hover:before:opacity-100 before:transition-opacity [clip-path:url(#my-clip-path)]">
+    <button class="button flex items-center group hover: justify-center px-14 max-lg:py-8 2xl:h-[98px] 2xl:w-[576px] 2xl:text-3xl leading-none uppercase font-Dewi font-bold after:absolute isolate after:bg-light-btn-gradient relative after:inset-0 after:z-[-1] after:opacity-0 after:duration-500 hover:after:opacity-100 after:transition-opacity [clip-path:url(#my-clip-path)]">
         <slot />
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden width="576" height="97" fill="none" viewBox="0 0 576 97" class="absolute select-none inset-x-[1px] inset-y-[1px]">
-    <path stroke="#fff" stroke-opacity=".5" d="M18.22 1 1 17.875V96h556.062L575 79.75V1H18.22Z"/>
     <svg height="0" width="0" aria-hidden>
   <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.032,0.011,0.002,0.188 V1 h0.969 L1,0.839 V0.011 H0.032"></path></clipPath>
 </svg>
-</svg>
+
     </button>
 </template>
+
+
+<style scoped lang="scss">
+$size-offset: 20px;
+$size-border: 2px;
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+    background-color: rgba(221, 221, 221, 0.87);
+    clip-path: polygon(
+        calc(100% - $size-offset - $size-border/2) calc(100% - $size-border),
+        calc(100% - $size-border) calc(100% - $size-offset - $size-border/2),
+        calc(100% - $size-border) $size-border,
+        calc($size-offset + $size-border/2) $size-border,
+        $size-border calc($size-offset + $size-border/2),
+        $size-border calc(100% - $size-border),
+        0% 100%,
+        0% $size-offset,
+        $size-offset 0%,
+        100% 0%,
+        100% calc(100% - $size-offset),
+        calc(100% - $size-offset) 100%,
+        0% 100%,
+        $size-border calc(100% - $size-border)
+    );
+}
+</style>
 

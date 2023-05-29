@@ -4,7 +4,7 @@
         <div class="container flex justify-center">
             <div class="text-[#AAA9A9] bg-white py-14 px-10">
                 <h2 class="text-center text-black">Записаться на курс</h2>
-                <div class="price_block relative py-4 px-10 mt-10 flex justify-around gap-5 items-center">
+                <div class="price_block relative py-4 2xl:px-10 mt-10 flex 2xl:flex-row flex-col justify-around gap-5 items-center">
                     <div>
                         <ul class="list-disc text-sm">
                             <li>Курс в подарок</li>
@@ -15,23 +15,24 @@
                     </div>
                     <div>
                         <p>Осталось: 7 мест</p>
-                        <p class="text-4xl font-bold text-[#82D890]">25 000 ₸/мес <span class="line-through text-[#AAA9A9]">98 560 ₸/мес </span></p>
+                        <p class="line-through font-bold 2xl:hidden mt-5 text-[#AAA9A9]">98 560 ₸/мес </p>
+                        <p class="2xl:text-4xl text-3xl font-bold text-[#82D890]">25 000 ₸/мес <span class="line-through 2xl:inline-block hidden text-[#AAA9A9]">98 560 ₸/мес </span></p>
                     </div>
                 </div>
-                <form class="flex gap-4 justify-center mt-8" @submit="submitHandle">
+                <form class="flex 2xl:flex-row flex-col gap-4 justify-center mt-8" @submit="submitHandle">
                     <div
-                        class="form_item focus-within:before:!bg-black text-[#474747] w-[300px] px-6 h-[80px] relative flex items-center">
+                        class="form_item focus-within:before:!bg-black text-[#474747] 2xl:w-[300px] px-6 h-[80px] relative flex items-center">
                         <IconsUser class="w-5 h-5" />
                         <input
                             v-model="form.name"
                             type="text"
-                            class="text-[#474747] pl-4 uppercase outline-none"
+                            class="text-[#474747] pl-4 xl:text-base text-sm uppercase outline-none"
                             placeholder="ваше имя"
                             required
                             minlength="3" />
                     </div>
                     <div
-                        class="form_item focus-within:before:!bg-black text-[#474747] w-[300px] px-6 h-[80px] relative flex items-center">
+                        class="form_item focus-within:before:!bg-black text-[#474747] 2xl:w-[300px] px-6 h-[80px] relative flex items-center">
                         <IconsPhone class="w-5 h-5" />
                         <input
                             v-model="form.phone"
@@ -40,13 +41,13 @@
                             data-maska="+7-(###)-###-##-##"
                             pattern="[+]\d-\(\d{3}\)-\d{3}-\d{2}-\d{2}"
                             type="phone"
-                            class="text-[#474747] pl-4 uppercase outline-none"
+                            class="text-[#474747] xl:text-base text-sm pl-4 uppercase outline-none"
                             placeholder="Ваш номер телефона" />
                     </div>
                     <ButtonsHero
-                        class="text-white outline-none text-xl h-[80px] !py-3 flex justify-center items-center w-[300px] px-3 gap-2 space-x-2" />
+                        class="text-white outline-none !text-xl h-[80px] !py-3 flex justify-center items-center 2xl:w-[300px] px-3 gap-2 space-x-2" />
                 </form>
-                <div class="flex">
+                <div class="flex 2xl:flex-row flex-col-reverse">
                     <div class="w-[350px] flex items-center mt-9">
                         <img src="~/assets/img/muha.png" alt="author" class="w-14 h-14 inline-block mr-5 rounded-full" />
                         <span class="leading-tight">Мухамеджан, автор курса перезвонит, ответит на вопросы</span>
@@ -61,8 +62,8 @@
                 </div>
             </div>
         </div>
-        <footer class="container text-center mt-28">
-            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto w-[116px]" />
+        <footer class="container text-center 2xl:mt-28 mt-16">
+            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto 2xl:w-[116px] w-[80px]" />
         </footer>
     </section>
 </template>

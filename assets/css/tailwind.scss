@@ -15,7 +15,7 @@
         }
     }
     h1 {
-        @apply font-Dewi font-bold uppercase 2xl:text-6xl max-lg:text-5xl text-3xl;
+        @apply font-Dewi font-bold uppercase 2xl:text-6xl text-3xl;
          
         & > span {
             @apply bg-heading-gradient bg-clip-text text-transparent 
@@ -29,4 +29,5 @@
 html, body {
     font-family: Montserrat, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
         Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }

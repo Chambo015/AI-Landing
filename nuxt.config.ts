@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     css: ['~/assets/css/main.scss', '~/assets/css/fonts.css'],
-    modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', 'nuxt-vuefire'],
+    modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', 'nuxt-vuefire', '@nuxt/image-edge'],
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.scss',
     },

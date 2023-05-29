@@ -1,9 +1,9 @@
 <template>
-    <section class="py-32" id="education">
+    <section class="2xl:py-32" id="education">
         <div class="container">
             <h2 class="leading-tight">Программа обучения — <span class="block">6 месяцев</span></h2>
-            <p class="mt-7 text-2xl">15 часов теории и 110 часов практики</p>
-            <ul class="mt-16 ">
+            <p class="mt-7 2xl:text-2xl">15 часов теории и 110 часов практики</p>
+            <ul class="2xl:mt-16 mt-8">
                 <TransitionGroup name="tabs">
                     <li v-for="a of data" :key="a.id" @click="clickHandleModule(a.id)">
                         <SectionsEducationItem v-bind="a" :open="selectedModuleId === a.id" />

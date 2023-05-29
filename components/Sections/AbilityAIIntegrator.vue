@@ -1,15 +1,15 @@
 <template>
     <section>
-        <div class="container mt-32">
+        <div class="container 2xl:mt-32">
             <h2>
                 На что способен  <span class="block leading-snug">ai - интегратор? </span>
             </h2>
-            <ul class="flex gap-20 mt-16 flex-wrap">
-                <li v-for="a in ability" :key="text" class="flex items-center flex-shrink-0">
-                    <div class="w-20 h-20 mr-5 flex-shrink-0 rounded-[5px] border-2 flex items-center justify-center bg-[rgba(21,21,21,0.51)] border-[#31302F]">
+            <ul class="flex 2xl:gap-20 gap-10 2xl:mt-16 mt-8 flex-wrap">
+                <li v-for="a in ability" :key="text" class="flex items-center 2xl:flex-shrink-0">
+                    <div class="2xl:w-20 w-12 2xl:h-20 h-12 mr-5 p-2 flex-shrink-0 rounded-[5px] border-2 flex items-center justify-center bg-[rgba(21,21,21,0.51)] border-[#31302F]">
                         <component :is="a.icon" />
                     </div>
-                    <p class="text-2xl max-w-[400px] leading-tight">{{ a.title }}</p>
+                    <p class="2xl:text-2xl text-sm 2xl:max-w-[400px] leading-tight">{{ a.title }}</p>
                 </li>
             </ul>
         </div>
