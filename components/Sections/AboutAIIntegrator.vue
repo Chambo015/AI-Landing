@@ -2,11 +2,12 @@
     <section class="relative">
         <div class="container mt-32">
             <h2 class="relative z-20">Про <span>AI - Интегратор</span></h2>
-            <div class="h-[700px] 2xl:relative mt-14 flex 2xl:flex-row flex-col 2xl:justify-between w-full before:absolute before:inset-0 before:bg-black/50 before:z-10">
+            <div class="h-[700px] 2xl:relative mt-14 flex 2xl:flex-row flex-col 2xl:justify-between w-full before:absolute before:inset-0 before:bg-black/50 before:z-10 lg:before:hidden">
                 <img
                     src="~/assets/img/about-ai-brain.png"
+                    loading="lazy"
                     alt="about-ai-brain"
-                    class="2xl:h-[130%] h-[100%] absolute object-cover left-0 blur-sm 2xl:left-1/2 2xl:-translate-x-1/2 top-1/2 -translate-y-1/2 select-none pointer-events-none 2xl:block"
+                    class="2xl:h-[130%] h-[100%] absolute object-cover left-0 max-md:blur-sm 2xl:left-1/2 2xl:-translate-x-1/2 top-1/2 -translate-y-1/2 select-none pointer-events-none 2xl:block"
                     aria-hidden="true" />
 
                 <ul class="[&_p]:2xl:text-2xl [&_p]:text-base 2xl:mb-14 mb-5 relative z-20">

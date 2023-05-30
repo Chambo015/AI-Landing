@@ -39,6 +39,8 @@
               <div class="2xl:pt-5 2xl:mt-auto mt-[65%]"><a href="#form"><ButtonsHero class="mx-auto block" /></a></div>
            </div>
             <nuxt-img
+                format="webp"
+                preload 
                 src="/bg-hero.png"
                 aria-hidden="true"
                 alt="brain"
