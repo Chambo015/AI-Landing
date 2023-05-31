@@ -63,7 +63,7 @@
 onMounted(() => {
     setTimeout(() => {
         visibleModalWorkShop.value = true;
-    }, 3000);
+    }, 10000);
 });
 
 const visibleModalWorkShop = ref(false);
