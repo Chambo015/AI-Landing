@@ -21,6 +21,7 @@
     "vue-tsc": "^1.4.4"
   },
   "dependencies": {
+    "firebase": "^9.22.1",
     "maska": "^2.1.8",
     "nuxt-vuefire": "^0.1.6",
     "vuefire": "^3.1.0"
