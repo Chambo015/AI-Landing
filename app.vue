@@ -1,7 +1,7 @@
 <template>
     <main>
         <header class="container text-center 2xl:mt-[50px] mt-8">
-            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto lg:w-[128px] w-[80px]" />
+            <img src="~/assets/img/logo.webp" alt="bu_logo" class="mx-auto lg:w-[128px] w-[80px]" />
         </header>
         <section>
             <div  class="container mt-8">
@@ -38,10 +38,10 @@
               </div>
               <div class="2xl:pt-5 2xl:mt-auto mt-[65%]"><a href="#form"><ButtonsHero class="mx-auto block" /></a></div>
            </div>
-            <nuxt-img
+            <img
                 format="webp"
                 preload 
-                src="/bg-hero.png"
+                src="/bg-hero.webp"
                 aria-hidden="true"
                 alt="brain"
                 class="absolute 2xl:max-h-[135%] max-lg:h-[100%] max-lg:object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-[57%] z-[-1] select-none" />
@@ -54,6 +54,7 @@
         <SectionsLeadTeacher />
         <SectionsEducationProgram />
         <SectionsCertificate />
+        <SectionsWorkShopInfo />
         <SectionsForm />
     </main>
     <ModalWorkShop v-if="visibleModalWorkShop" :close-modal="closeModalWorkshop" />

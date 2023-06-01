@@ -5,7 +5,7 @@
                 На что способен  <span class="block leading-snug">ai - интегратор? </span>
             </h2>
             <ul class="flex 2xl:gap-20 gap-10 2xl:mt-16 mt-8 flex-wrap">
-                <li v-for="a in ability" :key="text" class="flex items-center 2xl:flex-shrink-0">
+                <li v-for="a in ability" :key="a.id" class="flex items-center 2xl:flex-shrink-0">
                     <div class="2xl:w-20 w-12 2xl:h-20 h-12 mr-5 p-2 flex-shrink-0 rounded-[5px] border-2 flex items-center justify-center bg-[rgba(21,21,21,0.51)] border-[#31302F]">
                         <component :is="a.icon" />
                     </div>

@@ -15,21 +15,21 @@
 </template>
 
 <script setup lang="ts">
-import bgBtnModule1 from '@/assets/img/module1.png';
-import bgBtnModule2 from '@/assets/img/module2.png';
-import bgBtnModule3 from '@/assets/img/module3.png';
-import bgBtnModule4 from '@/assets/img/module4.png';
-import bgBtnModule5 from '@/assets/img/module5.png';
-import bgBtnModule6 from '@/assets/img/module6.png';
-import bgBtnModule7 from '@/assets/img/module7.png';
+import bgBtnModule1 from '@/assets/img/module1.webp';
+import bgBtnModule2 from '@/assets/img/module2.webp';
+import bgBtnModule3 from '@/assets/img/module3.webp';
+import bgBtnModule4 from '@/assets/img/module4.webp';
+import bgBtnModule5 from '@/assets/img/module5.webp';
+import bgBtnModule6 from '@/assets/img/module6.webp';
+import bgBtnModule7 from '@/assets/img/module7.webp';
 
-import bgDetailModule1 from '@/assets/img/module1-full.png';
-import bgDetailModule2 from '@/assets/img/module2-full.png';
-import bgDetailModule3 from '@/assets/img/module3-full.png';
-import bgDetailModule4 from '@/assets/img/module4-full.png';
-import bgDetailModule5 from '@/assets/img/module5-full.png';
-import bgDetailModule6 from '@/assets/img/module6-full.png';
-import bgDetailModule7 from '@/assets/img/module7-full.png';
+import bgDetailModule1 from '@/assets/img/module1-full.webp';
+import bgDetailModule2 from '@/assets/img/module2-full.webp';
+import bgDetailModule3 from '@/assets/img/module3-full.webp';
+import bgDetailModule4 from '@/assets/img/module4-full.webp';
+import bgDetailModule5 from '@/assets/img/module5-full.webp';
+import bgDetailModule6 from '@/assets/img/module6-full.webp';
+import bgDetailModule7 from '@/assets/img/module7-full.webp';
 
 const data = [
     {
