@@ -1,23 +1,11 @@
 <template>
-    <section class="mt-32 pt-32 pb-9 bg-cover bg-top relative" :style="{backgroundImage: `url(${sectionBgImg})`}"
+    <section class="pt-32 pb-9 bg-cover bg-top relative" :style="{backgroundImage: `url(${sectionBgImg})`}"
              id="form">
         <div class="absolute inset-0 select-none pointer-events-none" aria-hidden
              :style="{backgroundImage: `url(${noiseImg})`}"></div>
         <div class="container flex justify-center">
             <div class="text-[#AAA9A9] bg-white py-14 px-10">
-                <!--                -->
-                <div>
-                    <p class="text-center text-3xl font-bold uppercase 2xl:text-5xl">
-                        <span class="text-[rgba(125,198,137,1)]">Бесплатный</span> Воркшоп
-                    </p>
-                    <ul class="mt-5 font-TTOctosquares text-2xl [&_span]:font-semibold [&_span]:text-[rgba(125,198,137,1)]">
-                        <li><span>Тема: </span>AI Интегратор</li>
-                        <li><span>Выступает: </span>основатели BU + старший сеньор разработчик Мухамеджан</li>
-                        <li><span>Когда: </span> в это воскресенье в 16:00, в zoom конференции</li>
-                    </ul>
-                </div>
-
-                <h2 class="text-center text-black mt-10">Записаться на курс</h2>
+                <h2 class="text-center text-black">Записаться на курс</h2>
 
                 <form class="flex 2xl:flex-row flex-col gap-4 justify-center mt-10" @submit="submitHandle">
                     <div
@@ -67,7 +55,7 @@
 
                 <div class="flex 2xl:flex-row flex-col-reverse">
                     <div class="w-[350px] flex items-center mt-9">
-                        <img src="~/assets/img/muha.png" alt="author" class="w-14 h-14 inline-block mr-5 rounded-full"/>
+                        <img src="~/assets/img/muha.webp" alt="author" class="w-14 h-14 inline-block mr-5 rounded-full"/>
                         <span class="leading-tight">Мухамеджан, автор курса перезвонит, ответит на вопросы</span>
                     </div>
                     <label ref="checkboxEl" class="w-[300px] ml-auto inline-flex items-start mt-4 ">
@@ -81,7 +69,7 @@
             </div>
         </div>
         <footer class="container text-center 2xl:mt-28 mt-16">
-            <img src="~/assets/img/logo.png" alt="bu_logo" class="mx-auto 2xl:w-[116px] w-[80px]"/>
+            <img src="~/assets/img/logo.webp" alt="bu_logo" class="mx-auto 2xl:w-[116px] w-[80px]"/>
         </footer>
     </section>
 </template>

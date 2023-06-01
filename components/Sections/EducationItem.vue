@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import bgImg from '@/assets/img/module1.png'
 import { PropType } from 'vue';
 defineProps({
     bgBtn: String as PropType<any>,

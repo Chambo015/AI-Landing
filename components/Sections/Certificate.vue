@@ -10,12 +10,12 @@
                         University и сертификат от партнёра курса — AstanaHub.
                     </p>
                     <div class="flex gap-10 items-center 2xl:h-12 h-8 2xl:mt-20 mt-10">
-                        <img src="~/assets/img/logo.png" alt="BU" class="h-full">
-                        <img src="~/assets/img/astanahub.png" alt="astanahub" class="h-full">
+                        <img src="~/assets/img/logo.webp" alt="BU" class="h-full" />
+                        <img src="~/assets/img/astanahub.webp" alt="astanahub" class="h-full" />
                     </div>
                 </div>
                 <div class="flex-[0_0_60%]">
-                    <img src="~/assets/img/certificate-ai.png" alt="certificate" class="2xl:h-[500px] max-lg:mt-8 ml-auto object-cover">
+                    <img src="~/assets/img/certificate-ai.webp" alt="certificate" class="2xl:h-[500px] max-lg:mt-8 ml-auto object-cover" />
                 </div>
             </div>
         </div>
