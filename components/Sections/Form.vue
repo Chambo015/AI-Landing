@@ -112,7 +112,7 @@ async function writeUserData(name: string, phone: string) {
     }
 }
 
-const submitHandle = async (e: HTMLFormElement) => {
+const submitHandle = async (e: any) => {
     e.preventDefault();
 
     if (!form.privacy) {

@@ -61,7 +61,7 @@ import {getDatabase, ref as refFirebase, set, push} from 'firebase/database';
 
 const props = defineProps({
     closeModal: {
-        type: Function,
+        type: Function as PropType<() => void>,
         required: true
     }
 })
@@ -97,7 +97,7 @@ async function writeUserData(name: string, phone: string) {
     }
 }
 
-const submitHandle = async (e: HTMLFormElement) => {
+const submitHandle = async (e: any) => {
     e.preventDefault();
 
     await writeUserData(form.name, form.phone);

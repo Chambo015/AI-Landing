@@ -6,7 +6,7 @@
             <ul class="2xl:mt-16 mt-8">
                 <TransitionGroup name="tabs">
                     <li v-for="a of data" :key="a.id" @click="clickHandleModule(a.id)">
-                        <SectionsEducationItem v-bind="a" :open="selectedModuleId === a.id" />
+                        <EducationItem v-bind="a" :open="selectedModuleId === a.id" />
                     </li>
                 </TransitionGroup>
             </ul>
