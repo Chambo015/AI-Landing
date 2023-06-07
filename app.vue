@@ -81,7 +81,7 @@ const head = {
     ]
 };
 
-// useHead(head)
+useHead(head)
 
 onMounted(() => {
     setTimeout(() => {
