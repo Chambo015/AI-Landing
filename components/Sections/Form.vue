@@ -36,6 +36,20 @@
                             class="text-white outline-none !text-xl h-[80px] !py-3 flex justify-center items-center 2xl:w-[300px] px-3 gap-2 space-x-2"/>
                 </form>
 
+                <div class="flex 2xl:flex-row flex-col-reverse items-center">
+                    <div class="w-[350px] flex items-center mt-9">
+                        <img src="~/assets/img/muha.webp" alt="author" class="w-14 h-14 inline-block mr-5 rounded-full"/>
+                        <span class="leading-tight">Мухамеджан, автор курса перезвонит, ответит на вопросы</span>
+                    </div>
+                    <label ref="checkboxEl" class="w-[300px] ml-auto inline-flex items-start mt-4 ">
+                        <input type="checkbox" class="checkbox focus:outline" v-model="form.privacy"/>
+                        <span class="text-xs leading-tight cursor-pointer select-none">
+                            Нажимая на кнопку вы соглашаетесь с условиями обработки данных и политикой
+                            конфиденциальности
+                        </span>
+                    </label>
+                </div>
+
                 <div class="price_block relative py-4 2xl:px-10 mt-6 flex 2xl:flex-row flex-col justify-around gap-5 items-center">
                     <div>
                         <ul class="list-disc text-sm">
@@ -53,19 +67,6 @@
                     </div>
                 </div>
 
-                <div class="flex 2xl:flex-row flex-col-reverse">
-                    <div class="w-[350px] flex items-center mt-9">
-                        <img src="~/assets/img/muha.webp" alt="author" class="w-14 h-14 inline-block mr-5 rounded-full"/>
-                        <span class="leading-tight">Мухамеджан, автор курса перезвонит, ответит на вопросы</span>
-                    </div>
-                    <label ref="checkboxEl" class="w-[300px] ml-auto inline-flex items-start mt-4 ">
-                        <input type="checkbox" class="checkbox focus:outline" v-model="form.privacy"/>
-                        <span class="text-xs leading-tight cursor-pointer select-none">
-                            Нажимая на кнопку вы соглашаетесь с условиями обработки данных и политикой
-                            конфиденциальности
-                        </span>
-                    </label>
-                </div>
             </div>
         </div>
         <footer class="container text-center 2xl:mt-28 mt-16">
